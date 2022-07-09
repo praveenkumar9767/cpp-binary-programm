@@ -1,0 +1,65 @@
+#include<iostream>
+using namespace std;
+ 
+ class binary{
+    string s;
+    public:
+              void read(void);
+              void chk_bin(void);
+              void ones_complement(void);
+              void display(void);
+
+ };
+
+ void binary :: read(){
+    cout<< "please enter your input";               
+    cin>> s;
+ }
+
+ void binary :: chk_bin() {
+    for (int i=0; i<s.length(); i++){
+         
+    if( s.at(i) = '0' && s.at(i)!= '1'){
+
+        cout<< " invalid binary inputs"<< endl;
+        exit(0);
+    }     
+    }
+ }
+
+ void binary :: ones_complement(){
+    for(int i = 0; i<s.length(); i++){
+
+    if (s.at(i) == '0') {
+        s.at(i) ='1';
+    }   
+     else{
+        s.at(i) = '0';
+    }
+ } 
+
+ }
+
+
+void binary :: display(){
+    for (int i=0; i<s.length (); i++ ) {
+        cout<<" s.at(i) ";
+    }
+    cout<< endl;
+
+}
+
+int main(){
+    binary b1;
+    b1.read();
+    b1.chk_bin();
+    b1.ones_complement();
+    b1.display();
+    cout<< " its end now"<< endl;
+return 0;
+}
+
+
+
+
+//https://github.com/praveenkumar9767//
